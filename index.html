@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Explore my collection of artwork and creative expressions</p>
+    <!---<img src="C:\Users\91637\OneDrive\Pictures\art gallery\intro.png" alt="Creative art banner" class="header-img">-->
+  </header>
+
+  <section class="gallery-section">
+    <h2>My Artworks</h2>
+    <div class="gallery">
+      <img src="C:\Users\91637\OneDrive\Pictures\art gallery\image1.jpg" alt="Artwork 1">
+      <img src="C:\Users\91637\OneDrive\Pictures\art gallery\head.webp" alt="Artwork 2">
+      <img src="C:\Users\91637\OneDrive\Pictures\art gallery\image2.jpg" alt="Artwork 3">
+      <img src="C:\Users\91637\OneDrive\Pictures\art gallery\image3.jpg" alt="Artwork 4">
+      <img src="C:\Users\91637\OneDrive\Pictures\art gallery\image4.jpg" alt="Artwork 5">
+      <img src="C:\Users\91637\OneDrive\Pictures\art gallery\image5.jpg" alt="Artwork 6">
+    </div>
+  </section>
+
+  
+
+
+  
+
+  <!-- About Section -->
+  <section id="about" class="bg-white py-16 px-6 max-w-5xl mx-auto text-center">
+    <h3 class="text-3xl font-semibold mb-6">About Me</h3>
+    <p class="text-gray-600 text-lg leading-relaxed">
+      Hello! I'm Tharani, a passionate artist who loves experimenting with styles and mediums. I aim to evoke emotions through my work and continuously evolve as an artist.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <div class="contact-section">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" name="name" required />
+    <input type="email" placeholder="Your Email" name="email" required />
+    <textarea placeholder="Your Message" name="message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center text-gray-500 text-sm">
+    &copy; 2025 Tharani S. All rights reserved.
+  </footer>
+
+  <!-- JavaScript for validation -->
+  <script>
+    function validateForm() {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if (!name || !email || !message) {
+        alert("Please fill out all fields.");
+        return false;
+      }
+      document.getElementById("formMessage").innerText = "Message sent successfully!";
+      return false; // Prevents actual submission for demo
+    }
+  </script>
+</body>
+</html>
